@@ -14,18 +14,31 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run(){
     try{
         const bestDevelopersCollection = client.db('codersStackBox').collection('bestDevelopers');
+        const recentProjectsCollection = client.db('codersStackBox').collection('recentProjects');
 
         app.get('/bestDevelopers', async(req, res)=>{
             const query = {}
             const cursor = bestDevelopersCollection.find(query);
-            const services = await cursor.toArray();
-            res.send(services);
+            const developers = await cursor.toArray();
+            res.send(developers);
         });
         app.get('/bestDevelopers/:id', async(req, res)=>{
             const id = req.params.id;
             const query = {_id: ObjectId(id)}
             const developer = await bestDevelopersCollection.findOne(query);
             res.send(developer);
+        });
+        app.get('/recentProjects', async(req, res)=>{
+            const query = {}
+            const cursor = recentProjectsCollection.find(query);
+            const projects = await cursor.toArray();
+            res.send(projects);
+        });
+        app.get('/recentProjects/:id', async(req, res)=>{
+            const id = req.params.id;
+            const query = {_id: ObjectId(id)}
+            const project = await recentProjectsCollection.findOne(query);
+            res.send(project);
         })
     }
     finally{
