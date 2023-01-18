@@ -1,0 +1,44 @@
+[
+    {
+        "author": "Michael",
+        "authorImg": "https://i.ibb.co/Sx2vPVL/first.jpg",
+        "title": "Image Slider",
+        "projectImg": "https://i.ibb.co/QptQzQg/project-Img.webp",
+        "description": "I build this image slider using HTML, CSS & JS"
+    },
+    {
+        "author": "Ethan",
+        "authorImg": "https://i.ibb.co/g3YrtkT/pexels-italo-melo-2379004.jpg",
+        "title": "Image Slider",
+        "projectImg": "https://i.ibb.co/QptQzQg/project-Img.webp",
+        "description": "I build this image slider using HTML, CSS & JS"
+    },
+    {
+        "author": "Jassia",
+        "authorImg": "https://i.ibb.co/ftGd5W3/jassia.jpg",
+        "title": "Image Slider",
+        "projectImg": "https://i.ibb.co/QptQzQg/project-Img.webp",
+        "description": "I build this image slider using HTML, CSS & JS"
+    },
+    {
+        "author": "Samuel",
+        "authorImg": "https://i.ibb.co/Sx2vPVL/first.jpg",
+        "title": "Image Slider",
+        "projectImg": "https://i.ibb.co/QptQzQg/project-Img.webp",
+        "description": "I build this image slider using HTML, CSS & JS"
+    },
+    {
+        "author": "David",
+        "authorImg": "https://i.ibb.co/Sx2vPVL/first.jpg",
+        "title": "Image Slider",
+        "projectImg": "https://i.ibb.co/QptQzQg/project-Img.webp",
+        "description": "I build this image slider using HTML, CSS & JS"
+    },
+    {
+        "author": "Dylan",
+        "authorImg": "https://i.ibb.co/Sx2vPVL/first.jpg",
+        "title": "Image Slider",
+        "projectImg": "https://i.ibb.co/QptQzQg/project-Img.webp",
+        "description": "I build this image slider using HTML, CSS & JS"
+    }
+]
