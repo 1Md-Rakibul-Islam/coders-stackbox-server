@@ -70,6 +70,14 @@ async function run(){
             res.send(categoryBasedProjects);
         })
 
+        // single id based one project get api
+        app.get('/project/:id', async(req, res)=> {
+            const id = req.params.id;
+            const query = { _id: ObjectId(id) };
+            const singleIdBasedProject = await projectsCollection.findOne(query);
+            res.send(singleIdBasedProject);
+        })
+
 
     }
     finally{
